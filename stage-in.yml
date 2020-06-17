@@ -1,0 +1,10 @@
+catalog:
+    id: catid
+    title: cat title
+    description: this is the cat description
+    collections:
+        - input_reference:
+            title: Sentinel-3 OLCI Level 2 (OL_2_LFR____)
+            description: Sentinel-3 OLCI Level 2 (OL_2_LFR____) catalogue reference
+            entries:
+                - https://catalog.terradue.com/sentinel3/search?uid=S3A_OL_2_LFR____20200612T063015_20200612T063315_20200612T081703_0179_059_191_2700_LN1_O_NR_002

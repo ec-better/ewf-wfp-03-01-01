@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export GPT_BIN=$PREFIX/snap/bin/gpt
+
+exit 0

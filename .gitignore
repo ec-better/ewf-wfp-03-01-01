@@ -1,0 +1,6 @@
+*.tif
+*.properties
+.ipynb_checkpoints
+__pycache__
+*.dim
+*.data

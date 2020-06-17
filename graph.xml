@@ -1,0 +1,51 @@
+<graph>
+  <version>1.0</version>
+  <node id="Read">
+    <operator>Read</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <formatName>Sen3</formatName>
+      <file>/workspace/data/s3ol2/input_reference/S3A_OL_2_LFR____20200612T063015_20200612T063315_20200612T081703_0179_059_191_2700_LN1_O_NR_002/S3A_OL_2_LFR____20200612T063015_20200612T063315_20200612T081703_0179_059_191_2700_LN1_O_NR_002/S3A_OL_2_LFR____20200612T063015_20200612T063315_20200612T081703_0179_059_191_2700_LN1_O_NR_002.SEN3/xfdumanifest.xml</file>
+    </parameters>
+  </node>
+  <node id="Reproject">
+    <operator>Reproject</operator>
+    <sources>
+      <sourceProduct refid="Read"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <includeTiePointGrids>true</includeTiePointGrids>
+      <easting/>
+      <wktFile/>
+      <orthorectify>false</orthorectify>
+      <northing/>
+      <resamplingName>Nearest</resamplingName>
+      <addDeltaBands>false</addDeltaBands>
+      <referencePixelY/>
+      <pixelSizeX/>
+      <tileSizeX/>
+      <referencePixelX/>
+      <width/>
+      <height/>
+      <tileSizeY/>
+      <pixelSizeY/>
+      <noDataValue/>
+      <orientation>0</orientation>
+      <elevationModelName/>
+      <crs>EPSG:4326</crs>
+    </parameters>
+  </node>
+  <node id="Write">
+    <operator>Write</operator>
+    <sources>
+      <sourceProduct refid="Reproject"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <formatName>BEAM-DIMAP</formatName>
+      <clearCacheAfterRowWrite>false</clearCacheAfterRowWrite>
+      <writeEntireTileRows>true</writeEntireTileRows>
+      <file>s3_olci</file>
+      <deleteOutputOnFailure>true</deleteOutputOnFailure>
+    </parameters>
+  </node>
+</graph>
