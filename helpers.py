@@ -1,11 +1,5 @@
 import os
 import sys
-sys.path.append(os.path.join(os.environ['PREFIX'], 'conda-otb/lib/python'))
-os.environ['OTB_APPLICATION_PATH'] = os.path.join(os.environ['PREFIX'], 'conda-otb/lib/otb/applications')
-os.environ['GDAL_DATA'] =  os.path.join(os.environ['PREFIX'], 'share/gdal')
-os.environ['PROJ_LIB'] = os.path.join(os.environ['PREFIX'], 'share/proj')
-os.environ['GPT_BIN'] = os.path.join(os.environ['PREFIX'], 'snap/bin/gpt')
-import otbApplication
 
 import gdal
 import numpy as np
