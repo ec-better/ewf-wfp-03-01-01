@@ -1,6 +1,7 @@
 name: env_s3
 channels:
   - terradue
+  - defaults
   - conda-forge
 dependencies:
   - python=3.7
