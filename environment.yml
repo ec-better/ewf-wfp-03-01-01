@@ -8,7 +8,7 @@ dependencies:
   - snap
   - ipykernel
   - gdal
-  - pystac
+  - pystac=0.3.3
   - lxml
   - shapely
   - geopandas
