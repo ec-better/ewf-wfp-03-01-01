@@ -9,6 +9,7 @@ dependencies:
   - ipykernel
   - gdal
   - pystac=0.3.3
+  - instac
   - lxml
   - shapely
   - geopandas

@@ -7,4 +7,4 @@ catalog:
             title: Sentinel-3 OLCI Level 2 (OL_2_LFR____)
             description: Sentinel-3 OLCI Level 2 (OL_2_LFR____) catalogue reference
             entries:
-                - https://catalog.terradue.com/sentinel3/search?uid=S3A_OL_2_LFR____20200612T063015_20200612T063315_20200612T081703_0179_059_191_2700_LN1_O_NR_002
+                - https://catalog.terradue.com/sentinel3/search?uid=S3B_OL_2_LFR____20200716T075030_20200716T075330_20200716T093708_0179_041_149_2700_LN1_O_NR_002
